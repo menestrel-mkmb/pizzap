@@ -1,0 +1,149 @@
+/*
+
+Estilos globais
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kristi&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+// colors raw
+
+$color-black: #1f1c1f;
+$color-light-yellow: #fadc7a;
+$color-yellow: #f2c902;
+$color-red: #e6173e;
+$color-orange: #f07126;
+
+/*
+ *
+ * COLORS
+ *
+*/
+
+.light-theme {
+    $color-text: $color-black;
+    $color-bg: $color-light-yellow;
+    $color-pri: $color-yellow;
+    $color-sec: $color-red;
+    $color-acc: $color-orange;
+}
+
+.dark-theme {
+    $color-text: $color-light-yellow;
+    $color-bg: $color-black;
+    $color-pri: $color-yellow;
+    $color-sec: $color-red;
+    $color-acc: $color-orange;
+}
+
+//typo base
+
+$tipe-scale-minor-second: 1.067;
+$tipe-scale-major-second: 1.125;
+$tipe-scale-minor-third: 1.2;
+$tipe-scale-major-third: 1.25;
+$tipe-scale-perfect-fourth: 1.333;
+$tipe-scale-augmented-fourth: 1.414;
+$tipe-scale-perfect-fifth: 1.5;
+$tipe-scale-golden-ratio: 1.618;
+
+// typo raw
+
+$font-kristi: 'Kristi', cursive;
+$font-nunito-sans: 'Nunito Sans', sans-serif;
+$font-merriweather: 'Merriweather', serif;
+
+/*
+ *
+ * TYPOGRAPHY
+ *
+*/
+
+$font-display: $font-kristi;
+$font-body: $font-nunito-sans;
+$font-other: $font-merriweather;
+
+$font-size-base: 1rem;
+$line-height-base: 1.4*$font-size-base;
+$tipe-scale-current: $tipe-scale-perfect-fifth;
+
+// typo result
+
+$font-size-xxl: $font-size-base * (3*$tipe-scale-current);
+$font-size-l: $font-size-base * (2*$tipe-scale-current);
+$font-size-m: $font-size-base * (1*$tipe-scale-current);
+$font-size-normal: $font-size-base;
+$font-size-s: $font-size-base / (1*$tipe-scale-current);
+$font-size-xs: $font-size-base / (2*$tipe-scale-current);
+
+$line-height-xxl: $font-size-xxl;
+$line-height-l: $font-size-l;
+$line-height-m: $line-height-base * (1*$tipe-scale-current);
+$line-height-normal: $line-height-base;
+$line-height-s: $line-height-base / (1*$tipe-scale-current);
+$line-height-xs: $line-height-base / (2*$tipe-scale-current);
+
+.title--too-large {
+    font-size: $font-size-xxl;
+    line-height: $line-height-xxl;
+}
+
+.title--large {
+    font-size: $font-size-l;
+    line-height: $line-height-l;
+}
+
+.title {
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+}
+
+.text {
+    font-size: $font-size-normal;
+    line-height: $line-height-normal;
+}
+
+.text--detail {
+    font-size: $font-size-s;
+    line-height: $line-height-s;
+}
+
+.text--too-small {
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+}
+
+* {
+    font-family: $font-body;
+}
+
+.hero-call {
+    font-family: $font-display;
+    font-weight: 700;
+}
+
+.desc-call {
+    font-family: $font-other;
+    font-weight: 500;
+}
+
+.content.hero {
+    font-size: $font-size-xxl;
+    font-weight: 400;
+}
+
+// Espaçamentos
+
+// Bordas
+
+// Componentes
+
+img {
+    width: 400px;
+    object-fit: contain;
+}
