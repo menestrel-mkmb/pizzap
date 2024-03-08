@@ -1,0 +1,62 @@
+/*
+
+Estilos globais
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Kristi&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  text-decoration: none;
+  list-style: none; }
+
+/*
+ *
+ * COLORS
+ *
+*/
+/*
+ *
+ * TYPOGRAPHY
+ *
+*/
+.title--too-large {
+  font-size: 4.5rem;
+  line-height: 4.5rem; }
+
+.title--large {
+  font-size: 3rem;
+  line-height: 3rem; }
+
+.title {
+  font-size: 1.5rem;
+  line-height: 2.1rem; }
+
+.text {
+  font-size: 1rem;
+  line-height: 1.4rem; }
+
+.text--detail {
+  font-size: 0.66667rem;
+  line-height: 0.93333rem; }
+
+.text--too-small {
+  font-size: 0.33333rem;
+  line-height: 0.46667rem; }
+
+* {
+  font-family: "Nunito Sans", sans-serif; }
+
+.hero-call {
+  font-family: "Kristi", cursive;
+  font-weight: 700; }
+
+.desc-call {
+  font-family: "Merriweather", serif;
+  font-weight: 500; }
+
+.content.hero {
+  font-size: 4.5rem;
+  font-weight: 400; }
+
+img {
+  width: 400px;
+  object-fit: contain; }
