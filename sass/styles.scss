@@ -4,44 +4,21 @@ Estilos globais
 
 */
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Kristi&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@import "variables";
 
 * {
     text-decoration: none;
     list-style: none;
 }
 
-// colors raw
-
-$color-black: #1f1c1f;
-$color-light-yellow: #fadc7a;
-$color-yellow: #f2c902;
-$color-red: #e6173e;
-$color-orange: #f07126;
-
 /*
  *
  * COLORS
  *
 */
-
-.light-theme {
-    $color-text: $color-black;
-    $color-bg: $color-light-yellow;
-    $color-pri: $color-yellow;
-    $color-sec: $color-red;
-    $color-acc: $color-orange;
-}
-
-.dark-theme {
-    $color-text: $color-light-yellow;
-    $color-bg: $color-black;
-    $color-pri: $color-yellow;
-    $color-sec: $color-red;
-    $color-acc: $color-orange;
-}
-
-//typo base
 
 $tipe-scale-minor-second: 1.067;
 $tipe-scale-major-second: 1.125;
@@ -51,12 +28,6 @@ $tipe-scale-perfect-fourth: 1.333;
 $tipe-scale-augmented-fourth: 1.414;
 $tipe-scale-perfect-fifth: 1.5;
 $tipe-scale-golden-ratio: 1.618;
-
-// typo raw
-
-$font-kristi: 'Kristi', cursive;
-$font-nunito-sans: 'Nunito Sans', sans-serif;
-$font-merriweather: 'Merriweather', serif;
 
 /*
  *
