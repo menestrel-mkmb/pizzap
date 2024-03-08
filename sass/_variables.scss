@@ -1,0 +1,23 @@
+$color-black: #1f1c1f;
+$color-light-yellow: #fadc7a;
+$color-yellow: #f2c902;
+$color-red: #e6173e;
+$color-orange: #f07126;
+
+$color-text: $color-black;
+$color-bg: $color-light-yellow;
+$color-pri: $color-yellow;
+$color-sec: $color-red;
+$color-acc: $color-orange;
+
+@media (prefers-color-scheme: dark) {
+    $color-text: $color-light-yellow;
+    $color-bg: $color-black;
+    $color-pri: $color-yellow;
+    $color-sec: $color-red;
+    $color-acc: $color-orange;
+}
+
+$font-kristi: 'Kristi', cursive;
+$font-nunito-sans: 'Nunito Sans', sans-serif;
+$font-merriweather: 'Merriweather', serif;
