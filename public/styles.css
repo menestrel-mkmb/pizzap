@@ -3,6 +3,7 @@
 Estilos globais
 
 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Kristi&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 * {
   text-decoration: none;
@@ -60,3 +61,32 @@ Estilos globais
 img {
   width: 400px;
   object-fit: contain; }
+
+.header {
+  background-color: #1f1c1f;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  height: 4.5rem;
+  padding: .5rem 2rem; }
+  .header .logo {
+    object-fit: contain; }
+    .header .logo__img {
+      height: 3rem; }
+  .header .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem; }
+    .header .menu__item {
+      padding: 1rem 2rem; }
+    .header .menu__link {
+      color: #f2c902; }
+      .header .menu__link:hover {
+        color: #fadc7a; }
