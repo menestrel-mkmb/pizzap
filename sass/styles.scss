@@ -20,14 +20,14 @@ Estilos globais
  *
 */
 
-$tipe-scale-minor-second: 1.067;
-$tipe-scale-major-second: 1.125;
-$tipe-scale-minor-third: 1.2;
-$tipe-scale-major-third: 1.25;
-$tipe-scale-perfect-fourth: 1.333;
-$tipe-scale-augmented-fourth: 1.414;
-$tipe-scale-perfect-fifth: 1.5;
-$tipe-scale-golden-ratio: 1.618;
+$type-scale-minor-second: 1.067;
+$type-scale-major-second: 1.125;
+$type-scale-minor-third: 1.2;
+$type-scale-major-third: 1.25;
+$type-scale-perfect-fourth: 1.333;
+$type-scale-augmented-fourth: 1.414;
+$type-scale-perfect-fifth: 1.5;
+$type-scale-golden-ratio: 1.618;
 
 /*
  *
@@ -41,23 +41,23 @@ $font-other: $font-merriweather;
 
 $font-size-base: 1rem;
 $line-height-base: 1.4*$font-size-base;
-$tipe-scale-current: $tipe-scale-perfect-fifth;
+$type-scale-current: $type-scale-perfect-fifth;
 
 // typo result
 
-$font-size-xxl: $font-size-base * (3*$tipe-scale-current);
-$font-size-l: $font-size-base * (2*$tipe-scale-current);
-$font-size-m: $font-size-base * (1*$tipe-scale-current);
+$font-size-xxl: $font-size-base * (3*$type-scale-current);
+$font-size-l: $font-size-base * (2*$type-scale-current);
+$font-size-m: $font-size-base * (1*$type-scale-current);
 $font-size-normal: $font-size-base;
-$font-size-s: $font-size-base / (1*$tipe-scale-current);
-$font-size-xs: $font-size-base / (2*$tipe-scale-current);
+$font-size-s: $font-size-base / (1*$type-scale-current);
+$font-size-xs: $font-size-base / (2*$type-scale-current);
 
 $line-height-xxl: $font-size-xxl;
 $line-height-l: $font-size-l;
-$line-height-m: $line-height-base * (1*$tipe-scale-current);
+$line-height-m: $line-height-base * (1*$type-scale-current);
 $line-height-normal: $line-height-base;
-$line-height-s: $line-height-base / (1*$tipe-scale-current);
-$line-height-xs: $line-height-base / (2*$tipe-scale-current);
+$line-height-s: $line-height-base / (1*$type-scale-current);
+$line-height-xs: $line-height-base / (2*$type-scale-current);
 
 .title--too-large {
     font-size: $font-size-xxl;
@@ -110,9 +110,32 @@ $line-height-xs: $line-height-base / (2*$tipe-scale-current);
 
 // Espaçamentos
 
+$padding-text-internal: .33rem;
+$padding-text-external: .5rem;
+
+$padding-sect-internal: 1rem;
+$padding-sect-external: 1.5rem;
+
 // Bordas
 
+$border-internal-radius: .66rem;
+$border-external-radius: 1rem;
+
 // Componentes
+
+article,
+section,
+div {
+    padding: $padding-sect-external $padding-sect-internal;
+    border-radius: $border-external-radius;
+}
+
+article section,
+form section,
+section section {
+    padding: $padding-sect-external;
+    border-radius: $border-internal-radius;
+}
 
 img {
     width: 400px;
