@@ -1,0 +1,35 @@
+@import "variables";
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: $padding-text-external;
+
+    &__txts {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: $padding-text-internal;
+    }
+
+    &__title {
+        font-size: $font-size-m;
+        padding: $padding-text-internal;
+    }
+
+    &__rating {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: $padding-text-external;
+    }
+
+    &__stars {
+        width: 150px;
+    }
+}
