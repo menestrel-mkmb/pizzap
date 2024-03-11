@@ -7,8 +7,8 @@ $color-orange: #f07126;
 $color-text: $color-black;
 $color-bg: $color-light-yellow;
 $color-pri: $color-yellow;
-$color-sec: $color-red;
-$color-acc: $color-orange;
+$color-sec: $color-orange;
+$color-acc: $color-red;
 
 @media (prefers-color-scheme: dark) {
     $color-text: $color-light-yellow;
