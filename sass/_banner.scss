@@ -12,17 +12,19 @@
     & .content {
         background-color: rgba($color: $color-bg, $alpha: 0.75);
         border-radius: 0;
+        color: $color-acc;
 
         max-width: 45%;
     }
 
     & .wrapper__text {
+        color: $color-text;
+        line-height: 100%;
+        word-spacing: 100%;
+
         display: block;
 
         padding: $padding-text-external 0;
-
-        line-height: 100%;
-        word-spacing: 100%;
     }
 }
 
