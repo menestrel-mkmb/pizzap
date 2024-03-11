@@ -21,13 +21,18 @@ Estilos globais
  *
 */
 .title--too-large {
-  font-size: 4.5rem;
-  line-height: 4.5rem;
+  font-size: 9rem;
+  line-height: 9rem;
+}
+
+.title--really-large {
+  font-size: 6rem;
+  line-height: 6rem;
 }
 
 .title--large {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
 }
 
 .title {
@@ -65,15 +70,22 @@ Estilos globais
 }
 
 .content.hero {
-  font-size: 4.5rem;
-  font-weight: 400;
+  font-size: 9rem;
+  font-weight: 500;
+  word-spacing: 150%;
+  letter-spacing: 150%;
+}
+
+main {
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 article,
 section,
 div {
   padding: 1.5rem 1rem;
-  border-radius: 1rem;
 }
 
 article section,
@@ -89,6 +101,21 @@ img {
      object-fit: contain;
 }
 
+@media screen and (max-width: 1200px) {
+  main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  main {
+    width: 100%;
+  }
+}
 .wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -113,14 +140,14 @@ img {
   text-align: center;
 }
 .wrapper__toppings {
-  background-color: #f2c902;
   border-radius: 0.66rem;
-  color: #e6173e;
+  color: #f07126;
   font-weight: 500;
   letter-spacing: 0.19rem;
-  padding: 0.33rem;
   text-align: center;
   filter: opacity(0.5);
+  margin-bottom: 0;
+  padding: 0.33rem;
 }
 .wrapper__list {
   text-align: center;
@@ -131,7 +158,7 @@ img {
   padding: 0.33rem;
 }
 .wrapper__rating {
-  background-color: #e6173e;
+  background-color: rgba(240, 113, 38, 0.75);
   color: #fadc7a;
   text-align: center;
   display: flex;
@@ -155,15 +182,16 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  height: 4.5rem;
-  padding: 0.5rem 2rem;
+  height: 9rem;
+  padding: 0 1.5rem;
 }
 .header .logo {
   -o-object-fit: contain;
      object-fit: contain;
 }
 .header .logo__img {
-  height: 3rem;
+  height: 4.5rem;
+  width: unset;
 }
 .header .menu {
   display: flex;
@@ -172,9 +200,9 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem;
 }
 .header .menu__item {
+  font-size: 1.5rem;
   padding: 1rem 2rem;
 }
 .header .menu__link {
@@ -182,6 +210,35 @@ img {
 }
 .header .menu__link:hover {
   color: #fadc7a;
+}
+
+.banner {
+  background: bottom no-repeat url("./assets/imgs/pizza1.jpg");
+  background-size: cover;
+  color: #1f1c1f;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.banner .content {
+  background-color: rgba(250, 220, 122, 0.75);
+  border-radius: 0;
+  max-width: 45%;
+}
+.banner .wrapper__text {
+  display: block;
+  padding: 0.5rem 0;
+  line-height: 100%;
+  word-spacing: 100%;
+}
+
+.cardapio {
+  background-color: #f07126;
+  color: #fadc7a;
+}
+.cardapio .wrapper__title {
+  font-size: 1.5rem;
 }
 
 .products {
@@ -200,15 +257,67 @@ img {
 }
 .products .product__img {
   border-radius: 0.66rem;
-  max-width: 80%;
-  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  max-width: 80%;
+  height: 200px;
 }
 .products .product--feature {
   flex-direction: row;
   justify-content: space-around;
-  min-width: 80%;
+  min-width: 75%;
+  max-width: 1350px;
+}
+.products .product--feature .product__img {
+  height: 300px;
+}
+
+.features {
+  background-color: #fadc7a;
+}
+.features .feature {
+  height: 10rem;
+  padding: 1.5rem;
+}
+.features .feature__title {
+  color: #f07126;
+  padding: 0.5rem;
+}
+.features .feature__desc {
+  padding: 0.33rem;
+}
+
+.where {
+  background: center no-repeat url("./assets/imgs/massa.jpg");
+  background-size: cover;
+  border-radius: 0;
+  color: #1f1c1f;
+  padding: 0;
+}
+.where__txts {
+  background-color: rgba(250, 220, 122, 0.9);
+  border-radius: 0;
+  padding: 1.5rem;
+}
+.where__title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+.where__desc {
+  text-align: center;
+}
+.where__plataforms {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.where__plataforms .plataform {
+  max-width: 25%;
+}
+.where__plataforms .plataform__img {
+  max-height: 75px;
+  min-width: 150px;
+  max-width: 250px;
 }/*# sourceMappingURL=styles.css.map */
