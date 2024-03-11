@@ -212,6 +212,49 @@ img {
   color: #fadc7a;
 }
 
+.footer {
+  background-color: #1f1c1f;
+  color: #fadc7a;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: -moz-min-content;
+  height: min-content;
+}
+.footer__logo {
+  height: 100px;
+  width: 300px;
+}
+.footer__sub-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.33rem;
+  padding: 0.5rem;
+}
+.footer__socials {
+  text-align: center;
+}
+.footer__link, .footer__social {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fadc7a;
+  padding: 0.33rem;
+}
+.footer__txts {
+  height: 100%;
+  width: 75%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer__txts section {
+  padding: 0;
+}
+.footer__txts .copyright {
+  align-self: flex-end;
+  text-align: center;
+  width: 100%;
+  padding: 0.33rem;
+}
+
 .banner {
   background: bottom no-repeat url("./assets/imgs/pizza1.jpg");
   background-size: cover;
