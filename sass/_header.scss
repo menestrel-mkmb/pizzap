@@ -12,13 +12,14 @@
 
     height: $font-size-xxl;
     
-    padding: .5rem 2rem;
+    padding: 0 $padding-sect-external;
 
     .logo {
         object-fit: contain;
         
         &__img {
             height: $font-size-l;
+            width: unset;
         }
     }
 
@@ -29,8 +30,6 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-
-        padding: .5rem;
 
         &__item {
             font-size: $font-size-m;
