@@ -2,34 +2,72 @@
 
 .wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: $padding-text-external;
 
+    &__deal {
+        width: 35%;
+    }
+
     &__txts {
         display: flex;
-        flex-direction: column;
         flex-wrap: nowrap;
+        flex-direction: column;
         gap: $padding-text-internal;
     }
 
+    &__img {
+        width: 40%;
+    }
+
     &__title {
-        font-size: $font-size-m;
+        text-align: center;
+    }
+
+    &__toppings {
+        background-color: $color-pri;
+        border-radius: $border-internal-radius;
+        color: $color-sec;
+
+        font-weight: 500;
+        letter-spacing: .19rem;
+        padding: $padding-text-internal;
+        text-align: center;
+        filter: opacity(.5);
+    }
+
+    &__list {
+        text-align: center;
+
+        width: 200px;
+
+        padding: $padding-text-external;
+    }
+
+    &__item {
         padding: $padding-text-internal;
     }
 
     &__rating {
+        background-color: $color-sec;
+        color: $color-bg;
+        text-align: center;
+
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: $padding-text-external;
+
+        padding: 0 $padding-text-external;
     }
 
     &__stars {
+        height: 50px;
         width: 150px;
     }
 }
