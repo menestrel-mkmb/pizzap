@@ -173,7 +173,7 @@ img {
     flex-direction: column;
   }
   .wrapper__deal {
-    width: 100%;
+    width: 90%;
   }
   .wrapper__img {
     width: 100%;
@@ -456,15 +456,19 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.where__plataforms .plataform {
-  max-width: 25%;
-}
 .where__plataforms .plataform__img {
   max-height: 75px;
   min-width: 150px;
   max-width: 250px;
 }
 
+@media screen and (max-width: 800px) {
+  .where__plataforms {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .form {
   background-color: #fadc7a;
 }
