@@ -25,3 +25,11 @@
         word-spacing: 100%;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .banner {
+        & .content {
+            max-width: 100%;
+        }
+    }
+}
