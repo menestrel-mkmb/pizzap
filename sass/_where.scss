@@ -30,7 +30,6 @@
         flex-wrap: wrap;
 
         & .plataform {
-            max-width: 25%;
 
             &__img {
                 max-height: 75px;
@@ -38,6 +37,16 @@
                 min-width: 150px;
                 max-width: 250px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .where {
+        &__plataforms {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
