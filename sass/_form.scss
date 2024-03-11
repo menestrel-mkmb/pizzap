@@ -1,0 +1,48 @@
+@import 'variables';
+
+.form {
+    background-color: $color-bg;
+    
+    &__title {
+        text-align: center;
+    }
+
+    form,
+    form section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__sect {
+        width: 80%;
+    }
+
+    &__inp {
+        border: 0;
+        border-radius: $border-external-radius;
+
+        min-width: 75%;
+
+        margin-top: $padding-text-internal;
+        padding: $padding-text-external $padding-text-external*4;
+    }
+
+    &__btn {
+        background-color: $color-pri;
+        border: 0;
+        border-radius: $border-external-radius;
+        color: $color-text;
+
+        cursor: pointer;
+
+        padding: $padding-sect-external;
+
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            background-color: $color-sec;
+            color: $color-bg;
+        }
+    }
+}
