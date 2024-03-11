@@ -1,16 +1,28 @@
 @import "variables";
 
 .features {
-    background-color: $color-bg;
+    padding: 0;
 
     .feature {
+        background-color: rgba($color-bg, 90%);
+        border-radius: 0;
 
-        height: 10rem;
+        display: flex;
+        align-items: center;
 
-        padding: $padding-sect-external;
+        min-height: 20rem;
+
+        padding: 0;
+
+        &__txts {
+            background-color: rgba($color-bg, 60%);
+            border-radius: 0;
+
+            height: max-content;
+        }
 
         &__title {
-            color: $color-sec;
+            color: $color-acc;
 
             padding: $padding-text-external;
         }
@@ -18,5 +30,25 @@
         &__desc {
             padding: $padding-text-internal;
         }
+    }
+
+    .feature-1 {
+        background: center no-repeat url('./assets/imgs/feature-1.jpg');
+        background-size: cover;
+    }
+
+    .feature-2 {
+        background: center no-repeat url('./assets/imgs/feature-2.jpg');
+        background-size: cover;
+    }
+
+    .feature-3 {
+        background: center no-repeat url('./assets/imgs/feature-3.jpg');
+        background-size: cover;
+    }
+
+    .feature-4 {
+        background: center no-repeat url('./assets/imgs/feature-4.jpg');
+        background-size: cover;
     }
 }
