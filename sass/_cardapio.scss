@@ -1,12 +1,23 @@
 @import "variables";
 
 .cardapio {
-    background-color: $color-sec;
-    color: $color-bg;
+    background-color: $color-bg;
+    color: $color-text;
+    
+    flex-direction: column;
 
-    .wrapper {
-        &__title {
-            font-size: $font-size-m;
-        }
+    &__title {
+        font-size: $font-size-m;
+        letter-spacing: 150%;
+        text-transform: uppercase;
+        word-spacing: 150%;
+    }
+
+    &__text {
+        max-width: 45%;
+    }
+
+    &__link {
+        color: $color-acc;
     }
 }
