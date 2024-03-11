@@ -1,0 +1,43 @@
+@import "variables";
+
+.where {
+    background: center no-repeat url('./assets/imgs/massa.jpg') ;
+    background-size: cover;
+    border-radius: 0;
+    color: $color-text;
+
+    padding: 0;
+
+    &__txts {
+        background-color: rgba($color-bg, 0.9);
+        border-radius: 0;
+
+        padding: $padding-sect-external;
+    }
+
+    &__title {
+        font-size: $font-size-normal;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__desc {
+        text-align: center;
+    }
+
+    &__plataforms {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & .plataform {
+            max-width: 25%;
+
+            &__img {
+                max-height: 75px;
+
+                min-width: 150px;
+                max-width: 250px;
+            }
+        }
+    }
+}
