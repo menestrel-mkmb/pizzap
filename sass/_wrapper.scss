@@ -5,7 +5,6 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: $padding-text-external;
 
     &__deal {
@@ -71,5 +70,26 @@
     &__stars {
         height: 50px;
         width: 150px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        flex-direction: column;
+
+        &__deal {
+            width: 100%;
+        }
+
+        &__img {
+            width: 100%;
+        }
     }
 }
