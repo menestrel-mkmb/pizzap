@@ -1,0 +1,58 @@
+@import 'variables';
+
+.footer {
+    background-color: $color-text;
+    color: $color-bg;
+
+    justify-content: space-around;
+    align-items: flex-start;
+
+    height: min-content;
+
+    &__logo {
+        height: 100px;
+        width: 300px;
+    }
+
+    &__sub-title {
+        font-size: $font-size-m;
+        letter-spacing: $padding-text-internal;
+
+        padding: $padding-text-external;
+    }
+
+    &__socials {
+        text-align: center;
+    }
+
+    &__link,
+    &__social {
+        font-size: $font-size-normal;
+        font-weight: 300;
+        color: $color-bg;
+
+        padding: $padding-text-internal;
+    }
+
+    &__txts {
+        height: 100%;
+        width: 75%;
+        
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        section {
+            padding: 0;
+        }
+
+        .copyright {
+            align-self: flex-end;
+            text-align: center;
+
+            width: 100%;
+
+            padding: $padding-text-internal;
+        }
+    }
+}
