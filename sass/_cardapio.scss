@@ -1,0 +1,12 @@
+@import "variables";
+
+.cardapio {
+    background-color: $color-sec;
+    color: $color-bg;
+
+    .wrapper {
+        &__title {
+            font-size: $font-size-m;
+        }
+    }
+}
