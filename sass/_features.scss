@@ -1,0 +1,22 @@
+@import "variables";
+
+.features {
+    background-color: $color-bg;
+
+    .feature {
+
+        height: 10rem;
+
+        padding: $padding-sect-external;
+
+        &__title {
+            color: $color-sec;
+
+            padding: $padding-text-external;
+        }
+
+        &__desc {
+            padding: $padding-text-internal;
+        }
+    }
+}
