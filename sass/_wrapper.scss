@@ -28,15 +28,17 @@
     }
 
     &__toppings {
-        background-color: $color-pri;
         border-radius: $border-internal-radius;
         color: $color-sec;
 
         font-weight: 500;
         letter-spacing: .19rem;
-        padding: $padding-text-internal;
         text-align: center;
+
         filter: opacity(.5);
+
+        margin-bottom: 0;
+        padding: $padding-text-internal;
     }
 
     &__list {
@@ -52,7 +54,7 @@
     }
 
     &__rating {
-        background-color: $color-sec;
+        background-color: rgba($color: $color-sec, $alpha: .75);
         color: $color-bg;
         text-align: center;
 
