@@ -1,0 +1,27 @@
+.banner {
+    background: bottom no-repeat url('./assets/imgs/pizza1.jpg');
+    background-size: cover;
+    color: $color-text;
+    
+    justify-content: space-between;
+    gap: $padding-sect-internal;
+    flex-wrap: wrap;
+
+    padding: 0;
+
+    & .content {
+        background-color: rgba($color: $color-bg, $alpha: 0.75);
+        border-radius: 0;
+
+        max-width: 45%;
+    }
+
+    & .wrapper__text {
+        display: block;
+
+        padding: $padding-text-external 0;
+
+        line-height: 100%;
+        word-spacing: 100%;
+    }
+}
