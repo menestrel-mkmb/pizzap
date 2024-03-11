@@ -4,6 +4,10 @@ Estilos globais
 
 */
 
+// Regras
+
+@use 'sass:math';
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Kristi&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
@@ -45,23 +49,30 @@ $type-scale-current: $type-scale-perfect-fifth;
 
 // typo result
 
-$font-size-xxl: $font-size-base * (3*$type-scale-current);
-$font-size-l: $font-size-base * (2*$type-scale-current);
+$font-size-xxl: $font-size-base * (6*$type-scale-current);
+$font-size-xl: $font-size-base * (4*$type-scale-current);
+$font-size-l: $font-size-base * (3*$type-scale-current);
 $font-size-m: $font-size-base * (1*$type-scale-current);
 $font-size-normal: $font-size-base;
-$font-size-s: $font-size-base / (1*$type-scale-current);
-$font-size-xs: $font-size-base / (2*$type-scale-current);
+$font-size-s: math.div($font-size-base, 1*$type-scale-current);
+$font-size-xs: math.div($font-size-base, (2*$type-scale-current));
 
 $line-height-xxl: $font-size-xxl;
+$line-height-xl: $font-size-xl;
 $line-height-l: $font-size-l;
 $line-height-m: $line-height-base * (1*$type-scale-current);
 $line-height-normal: $line-height-base;
-$line-height-s: $line-height-base / (1*$type-scale-current);
-$line-height-xs: $line-height-base / (2*$type-scale-current);
+$line-height-s: math.div($line-height-base, (1*$type-scale-current));
+$line-height-xs: math.div($line-height-base, (2*$type-scale-current));
 
 .title--too-large {
     font-size: $font-size-xxl;
     line-height: $line-height-xxl;
+}
+
+.title--really-large {
+    font-size: $font-size-xl;
+    line-height: $line-height-xl;
 }
 
 .title--large {
@@ -105,7 +116,9 @@ $line-height-xs: $line-height-base / (2*$type-scale-current);
 
 .content.hero {
     font-size: $font-size-xxl;
-    font-weight: 400;
+    font-weight: 500;
+    word-spacing: 150%;
+    letter-spacing: 150%;
 }
 
 // Espaçamentos
@@ -123,11 +136,15 @@ $border-external-radius: 1rem;
 
 // Componentes
 
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
 article,
 section,
 div {
     padding: $padding-sect-external $padding-sect-internal;
-    border-radius: $border-external-radius;
 }
 
 article section,
@@ -147,4 +164,6 @@ img {
 // Páginas
 
 @import "header";
+
 @import "product";
+@import "features";
